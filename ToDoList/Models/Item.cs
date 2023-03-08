@@ -5,8 +5,10 @@ namespace ToDoList.Models
 {
   public class Item
   {
+    public int CategoryId { get; set; }
+    public Category Category { get; set; }
     public string Description { get; set; }
-    public int Id { get; set; }
+    public int ItemId { get; set; }
 
     public Item(string description)
     {
